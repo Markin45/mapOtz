@@ -1,0 +1,133 @@
+.app, .map{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.winForm {
+    position: fixed;
+    width: 380px;
+    height: 530px;
+    border-radius: 10px;
+    overflow:hidden;
+
+    background-color: #ffffff;
+}
+.winForm .top{
+    display:block;
+    height: 44px;
+    line-height:44px;
+
+    text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow:hidden;
+
+    background:url(img/point.png) left center no-repeat #ff8663;
+    background-position-x: 10px;
+
+    color: #ffffff;
+    font-size: 12px;
+
+    padding: 0 30px;
+}
+
+.winForm .krest_winForm{
+    position: absolute;
+    cursor: pointer;
+    right: 5px;
+    top: 5px;
+    width: 35px;
+    height: 35px;
+
+    background:url(img/krest.png) center center no-repeat;
+}
+
+.winForm .loadin{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 45px;
+    background:url(img/loadin.gif) center center no-repeat;
+}
+
+.winForm h2{
+    padding: 0;
+    margin: 15px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ff8663;
+}
+.winForm input{
+    padding: 7px;
+    margin: 0 10px 10px 10px;
+    border: solid 1px #c4c4c4;
+    border-radius: 15px;
+    width: calc(100% - 42px);
+}
+.winForm textarea{
+    padding: 7px;
+    margin: 0 10px 10px 10px;
+    border: solid 1px #c4c4c4;
+    border-radius: 15px;
+    width: calc(100% - 42px);
+    height: 100px;
+    resize: none;
+}
+.winForm input:focus, .winForm textarea:focus{
+    outline:0px;
+    border: solid 1px #606596;
+}
+
+.winForm .winFromAdd {
+    background: #ff8663;
+    color: white;
+    padding: 8px 15px;
+    margin: 0 15px;
+    display: inline-block;
+    font-size: 12px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.winForm .winFromAdd:hover {
+    background: #d64e29;
+}
+
+.winForm .otz {
+    display:block;
+    height: 171px;
+    border-bottom: solid 1px #f0f0f0;
+    margin: 10px;
+    overflow:hidden;
+    
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.winForm .otz::-webkit-scrollbar-track {border-radius: 2px;}
+.winForm .otz::-webkit-scrollbar {width: 4px;}
+.winForm .otz::-webkit-scrollbar-thumb {border-radius: 4px;background: #c4c4c4;}
+
+.winForm .otz .otzOne{
+    margin: 10px 0px;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.winForm .otz .oName{
+    display:inline-block;
+    font-weight: bold;
+    margin: 0 5px 0 0;
+}
+.winForm .otz .oPlace{
+    display:inline-block;
+    color: #616161;
+}
+.winForm .otz .oData{
+    display:inline-block;
+    font-size: 11px;
+}
+.winForm .otz .oText{
+    display:block;
+}

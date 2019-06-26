@@ -1,0 +1,28 @@
+<div class="addr">{{addr}}</div>
+<div class="krest_winForm"></div>
+<div class="loadin"{{#if showContext}} style="display:none;"{{/if}}></div>
+<div class="context"{{#if showLoading}} style="display:none;"{{/if}}>
+    <div class="otz">
+        {{#if otz}}
+            {{#each  otz}}
+                <div class="otzOne">
+                    <div class="oName">{{name}}</div>
+                    <div class="oPlace">{{place}}</div>
+                    <div class="oData">{{data}}</div>
+                    <div class="oText">{{text}}</div>
+                </div>
+            {{/each }}
+        {{else}}
+            Отзывов пока нет!
+        {{/if}}
+    </div>
+    <h2>ВАШ ОТЗЫВ</h2>
+    <form name="formOtz">
+        <div><input type="text" value="" name="otzName" placeholder="Ваше имя"></div>
+        <div><input type="text" value="" name="otzPlace" placeholder="Укажите место"></div>
+        <textarea name="otzText" placeholder="Поделитесь впечатлениями"></textarea>
+        <div style="text-align:right;">
+            <div class="winFromAdd">Добавить</div>
+        </div>
+    </form>
+</div>
